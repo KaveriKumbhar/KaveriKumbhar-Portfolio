@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { FiMail, FiPhone, FiMapPin, FiSend, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -231,12 +232,12 @@ export default function Contact() {
                       <div>
                         <h3 className="text-white font-semibold mb-1">{info.title}</h3>
                         {info.link ? (
-                          <a
+                          <Link
                             href={info.link}
                             className="text-gray-400 hover:text-blue-400 transition-colors"
                           >
                             {info.value}
-                          </a>
+                          </Link>
                         ) : (
                           <p className="text-gray-400">{info.value}</p>
                         )}
@@ -251,7 +252,7 @@ export default function Contact() {
                 <h3 className="text-2xl font-bold text-white mb-4">Follow Me</h3>
                 <div className="flex gap-4">
                   {socialLinks.map((social, index) => (
-                    <a
+                    <Link
                       key={index}
                       href={social.url}
                       target="_blank"
@@ -260,7 +261,7 @@ export default function Contact() {
                       aria-label={social.name}
                     >
                       {social.icon}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

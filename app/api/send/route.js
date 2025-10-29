@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import Link from 'next/link';
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -41,7 +42,7 @@ async function sendEmails(name, email, message, subject) {
         
         <div style="background-color:#f9fafb;padding:15px;border-radius:6px;margin:20px 0;">
           <p style="margin:5px 0;"><b>Name:</b> ${name}</p>
-          <p style="margin:5px 0;"><b>Email:</b> <a href="mailto:${email}" style="color:#3b82f6;">${email}</a></p>
+          <p style="margin:5px 0;"><b>Email:</b> <Link href="mailto:${email}" style="color:#3b82f6;">${email}</Link></p>
           <p style="margin:5px 0;"><b>Subject:</b> ${subject}</p>
         </div>
         

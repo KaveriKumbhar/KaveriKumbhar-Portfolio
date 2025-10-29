@@ -1,5 +1,6 @@
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Portfolio() {
   const projects = [
@@ -11,6 +12,7 @@ export default function Portfolio() {
       liveUrl: "https://www.shravanioverseas.com/",
       // githubUrlFrontend: "https://github.com/tf-technical/Shravni-oversies-frontend",
       // githubUrlBackend: "https://github.com/PRAMOD222/Shravni-Oversies-backend",
+      githubUrl: "#",
     },
     {
       title: "Swarnaras (E-Commerce Platform)",
@@ -18,7 +20,7 @@ export default function Portfolio() {
       tags: ["Next.js", "MongoDB", "Express.js", "Tailwind CSS","ShadcnUI"],
       image: "/swarnaras-img.png",
       liveUrl: "https://swarnaras-frontend.vercel.app/",
-      // githubUrl: "#",
+      githubUrl: "#",
     },
     {
       title: "Clothing Store (E-Commerce Platform)",
@@ -87,20 +89,20 @@ export default function Portfolio() {
 
                 {/* Links */}
                 <div className="flex gap-4">
-                  <a
+                  <Link
                     href={project.liveUrl}
                     className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-colors"
                   >
                     <FiExternalLink className="w-5 h-5" />
                     Live Demo
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={project.githubUrl}
                     className="flex items-center gap-2 text-gray-400 hover:text-white font-medium transition-colors"
                   >
                     <FiGithub className="w-5 h-5" />
                     Code
-                  </a>
+                  </Link>
                   
                 </div>
               </div>
@@ -110,12 +112,12 @@ export default function Portfolio() {
 
         {/* View All Projects Button */}
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/portfolio"
             className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-105 transition-all duration-300"
           >
             View All Projects
-          </a>
+          </Link>
         </div>
       </div>
     </section>

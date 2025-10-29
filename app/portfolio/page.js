@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import Link from "next/link";
 
 export default function PortfolioPage() {
   const projects = [
@@ -13,6 +14,7 @@ export default function PortfolioPage() {
       liveUrl: "https://www.shravanioverseas.com/",
       // githubUrlFrontend: "https://github.com/tf-technical/Shravni-oversies-frontend",
       // githubUrlBackend: "https://github.com/PRAMOD222/Shravni-Oversies-backend",
+      githubUrl: "#",
       category: "Full Stack"
     },
     {
@@ -21,7 +23,7 @@ export default function PortfolioPage() {
       tags: ["Next.js", "MongoDB", "Express.js", "Tailwind CSS", "ShadcnUI"],
       image: "/swarnaras-img.png",
       liveUrl: "https://swarnaras-frontend.vercel.app/",
-      // githubUrl: "#",
+      githubUrl: "#",
       category: "Full Stack"
     },
     {
@@ -39,7 +41,7 @@ export default function PortfolioPage() {
       tags: ["Next.js", "Tailwind CSS", "Gmail-integration"],
       image: "/greensmith-img.png",
       liveUrl: "https://greensmith-solar-website-anyr.vercel.app/",
-      // githubUrl: "#",
+      githubUrl: "#",
       category: "Static Website"
     },
     {
@@ -48,7 +50,7 @@ export default function PortfolioPage() {
       tags: ["Next.js", "Tailwind CSS", "Gmail-integration"],
       image: "/parshv-img.png",
       liveUrl: "#",
-      // githubUrl: "#",
+      githubUrl: "#",
       category: "Static Website"
     }
     
@@ -122,20 +124,20 @@ export default function PortfolioPage() {
 
                   {/* Links */}
                   <div className="flex gap-4 pt-4 border-t border-gray-700">
-                    <a
+                    <Link
                       href={project.liveUrl}
                       className="flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-colors text-sm"
                     >
                       <FiExternalLink className="w-4 h-4" />
                       Live Demo
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href={project.githubUrl}
                       className="flex items-center gap-2 text-gray-400 hover:text-white font-medium transition-colors text-sm"
                     >
                       <FiGithub className="w-4 h-4" />
                       Code
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -150,12 +152,12 @@ export default function PortfolioPage() {
             <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
               I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
             </p>
-            <a
+            <Link
               href="/contact"
               className="inline-block px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full text-lg font-semibold hover:shadow-2xl hover:shadow-blue-500/50 hover:scale-105 transition-all duration-300"
             >
               Get In Touch
-            </a>
+            </Link>
           </div>
         </div>
       </section>
