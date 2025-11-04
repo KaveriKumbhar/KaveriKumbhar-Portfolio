@@ -40,10 +40,10 @@ export default function Services() {
         {/* Section Title */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-sm font-semibold text-blue-500 uppercase tracking-wider mb-3 animate-fade-up">
-            SERVICES
+            SKILLS
           </h2>
           <h3 className="text-4xl md:text-5xl font-bold text-white animate-fade-up delay-100">
-            SERVICES
+            SKILLS  
           </h3>
         </div>
 
