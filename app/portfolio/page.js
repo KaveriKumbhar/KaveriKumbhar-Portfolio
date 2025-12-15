@@ -52,6 +52,15 @@ export default function PortfolioPage() {
       liveUrl: "#",
       githubUrl: "#",
       category: "Static Website"
+    },
+    {
+      title: "Task Manager App",
+      description: "It is a dynamic website for a task management application. It is built with Next.js and Tailwind CSS at frontend and Nest JS at backend and PostgreSQL(Supabase and Typeorm) as database.",
+      tags: ["Next.js", "Tailwind CSS", "Nest JS", "PostgreSQL", "Supabase", "Typeorm"],
+      image: "/task-img.png",
+      liveUrl: "https://task-manager-frontend-alpha-eight.vercel.app/",
+      githubUrl: "https://github.com/KaveriKumbhar/task-manager-frontend",
+      category: "Dynamic Website"
     }
     
   ];

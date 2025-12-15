@@ -11,8 +11,8 @@ export const metadata = {
 export default function About() {
   const skills = [
     { category: "Frontend", items: ["React.js", "Next.js", "JavaScript","TypeScript", "HTML", "CSS", "Tailwind CSS"] },
-    { category: "Backend", items: ["Node.js", "Express.js", "MongoDB", "Gmail-integration", "OAuth-Integration", "REST APIs"] },
-    { category: "Tools & Others", items: ["Git & GitHub", "VS Code", "Responsive Design"] },
+    { category: "Backend", items: ["Node.js", "Express.js","Nest JS","MongoDB", "PostgreSQL","Gmail-integration", "OAuth-Integration", "REST APIs"] },
+    { category: "Tools & Others", items: ["Git & GitHub", "Vercel","AWS(EC2)","VS Code", "Responsive Design"] },
   ];
 
   const stats = [
