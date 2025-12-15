@@ -15,6 +15,7 @@ export default function About() {
     { category: "Tools & Others", items: ["Git & GitHub", "Vercel","AWS(EC2)","VS Code", "Responsive Design"] },
   ];
 
+
   const stats = [
     { icon: <FiAward />, number: "7+", label: "Projects Completed" },
     { icon: <FiUsers />, number: "3+", label: "Happy Clients" },
