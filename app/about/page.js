@@ -12,7 +12,7 @@ export default function About() {
   const skills = [
     { category: "Frontend", items: ["React.js", "Next.js", "JavaScript","TypeScript", "HTML", "CSS", "Tailwind CSS"] },
     { category: "Backend", items: ["Node.js", "Express.js","Nest JS","MongoDB", "PostgreSQL","Gmail-integration", "OAuth-Integration", "REST APIs"] },
-    { category: "Tools & Others", items: ["Git & GitHub", "Vercel","AWS(EC2)","VS Code", "Responsive Design"] },
+    { category: "Tools & Others", items: ["Git & GitHub", "Vercel","AWS(EC2)","VS Code", "Responsive Design","Cursor AI"] },
   ];
 
 
@@ -141,7 +141,7 @@ export default function About() {
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700 animate-fade-up">
               <h3 className="text-xl font-semibold text-white mb-1">B.Tech, Computer Science & Engineering</h3>
               <p className="text-blue-300 mb-2">Sant Gajanan Maharaj College of Engineering, Mahagaon</p>
-              <p className="text-gray-400">2021 – 2025 • CGPA: 9</p>
+              <p className="text-gray-400">2021 – 2025 • CGPA: 8</p>
             </div>
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-2xl border border-gray-700 animate-fade-up delay-100">
               <h3 className="text-xl font-semibold text-white mb-1">12th (HSC)</h3>
